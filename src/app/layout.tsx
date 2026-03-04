@@ -14,8 +14,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'V&V consulting',
-  description: 'V&V consulting',
+  title: 'Trivista-consulting',
+  description: 'trivista-consulting',
   icons: {
     icon: [{ url: '/favicon.webp' }],
   },
