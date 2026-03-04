@@ -71,7 +71,14 @@ export default function ContactSectionDark() {
                   href="tel:+380970144014"
                   className="text-lg font-medium text-blue-400 hover:underline"
                 >
-                  +38 (097) 01 44 014
+                  +38 097 0144014
+                </a>
+                <br />
+                <a
+                  href="tel:+380969160062"
+                  className="text-lg font-medium text-blue-400 hover:underline"
+                >
+                  +38 096 9160062
                 </a>
               </div>
 
@@ -83,6 +90,11 @@ export default function ContactSectionDark() {
                 >
                   thevvvgroup@gmail.com
                 </a>
+              </div>
+              <div>
+                ТОВ ТріВіста Консалтинг,
+                <br />
+                Братства Тарасівців, 12/37
               </div>
             </div>
           </motion.div>
