@@ -24,12 +24,12 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="block">
             <Image
-              src="/images/logo.webp"
+              src="/logo-light.webp"
               alt="Logo"
-              width={60}
-              height={30}
+              width={50}
+              height={100}
               priority
-              className="cursor-pointer ml-6 sm:ml-0"
+              className="h-[50px] sm:h-[80px] w-auto cursor-pointer ml-6 sm:ml-0"
             />
           </Link>
         </div>

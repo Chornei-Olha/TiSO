@@ -42,9 +42,9 @@ export default function ContactSectionDark() {
           >
             <Link href="/">
               <img
-                src="/images/logo_black.webp"
+                src="/logo-dark.webp"
                 alt="V&V consulting"
-                className="h-[100px] sm:h-[180px] w-auto opacity-90 hover:opacity-100 transition"
+                className="h-[80px] sm:h-[100px] opacity-90 hover:opacity-100 transition"
               />
             </Link>
           </motion.div>
@@ -127,9 +127,17 @@ export default function ContactSectionDark() {
                 </button>
               </form>
 
-              <p className="text-xs text-gray-400 text-center mt-6">
+              {/* <p className="text-xs text-gray-400 text-center mt-6">
                 Ваша інформація конфіденційна
-              </p>
+              </p> */}
+              <a
+                href="/file.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-xs text-gray-400 text-center mt-6"
+              >
+                Політика конфіденційності
+              </a>
             </div>
           </motion.div>
         </div>
