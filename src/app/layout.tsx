@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/index.css';
 import { Montserrat } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
 
 const montserrat = Montserrat({
   subsets: ['latin', 'cyrillic'],
@@ -8,13 +9,16 @@ const montserrat = Montserrat({
   variable: '--font-main',
 });
 
-export const viewport = {
+export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
 };
 
-export const metadata = {
-  title: 'Trivista-consulting',
+export const metadata: Metadata = {
+  // metadataBase: new URL('https://trivista-consulting.com.ua'),
+  metadataBase: new URL('https://v-v-consulting.vercel.app/'),
+
+  title: 'Trivista Consulting',
   description:
     'Trivista Consulting — професійний консалтинг для бізнесу. Стратегія розвитку, управління, цифрові рішення та підтримка росту компаній.',
 
@@ -30,7 +34,7 @@ export const metadata = {
     siteName: 'Trivista Consulting',
     images: [
       {
-        url: '/og-image.png', // картинка для превью
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Trivista Consulting',
@@ -55,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ua">
+    <html lang="uk">
       <body className={montserrat.variable}>
         {children}
         <script
