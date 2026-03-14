@@ -15,7 +15,8 @@ export const viewport = {
 
 export const metadata = {
   title: 'Trivista-consulting',
-  description: 'trivista-consulting',
+  description:
+    'Trivista Consulting — професійний консалтинг для бізнесу. Стратегія розвитку, управління, цифрові рішення та підтримка росту компаній.',
   icons: {
     icon: [{ url: '/favicon.webp' }],
   },

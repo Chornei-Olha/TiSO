@@ -31,14 +31,23 @@ export default function ContactSectionDark() {
   return (
     <section id="footer" className="bg-gray-900 py-10 text-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid gap-12 md:grid-cols-3 items-stretch">
+        <div className="grid gap-8 md:gap-12 md:grid-cols-3 items-stretch">
+          {' '}
+          {/* LEFT — LOGO */}
+          {/* <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="order-3 md:order-2 flex flex-col justify-between h-full"
+          > */}
           {/* LEFT — LOGO */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="order-1 flex justify-center md:justify-start items-start"
+            className="order-3 md:order-1 flex flex-col justify-between h-full"
           >
             <Link href="/">
               <img
@@ -47,15 +56,28 @@ export default function ContactSectionDark() {
                 className="h-[80px] sm:h-[100px] opacity-90 hover:opacity-100 transition"
               />
             </Link>
+            <div>
+              ТОВ ТріВіста Консалтинг,
+              <br />
+              м. Київ, <br />
+              вул. Братства Тарасівців, 12/37
+            </div>
           </motion.div>
-
+          {/* CENTER — TEXT + CONTACTS */}
+          {/* <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="order-1 md:order-2 flex flex-col justify-between h-full"
+          > */}
           {/* CENTER — TEXT + CONTACTS */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="order-3 md:order-2 flex flex-col justify-between h-full"
+            className="order-1 md:order-2 flex flex-col justify-between h-full"
           >
             <div>
               <h2 className="text-3xl font-bold text-white">Звʼяжіться з нами</h2>
@@ -64,7 +86,8 @@ export default function ContactSectionDark() {
               </p>
             </div>
 
-            <div className="space-y-6 mt-10">
+            <div className="space-y-6 mt-6 md:mt-10">
+              {' '}
               <div>
                 <p className="text-sm text-gray-400">Телефон</p>
                 <a
@@ -81,7 +104,6 @@ export default function ContactSectionDark() {
                   +38 096 9160062
                 </a>
               </div>
-
               <div>
                 <p className="text-sm text-gray-400">Email</p>
                 <a
@@ -91,14 +113,16 @@ export default function ContactSectionDark() {
                   thevvvgroup@gmail.com
                 </a>
               </div>
-              <div>
-                ТОВ ТріВіста Консалтинг,
-                <br />
-                Братства Тарасівців, 12/37
-              </div>
             </div>
           </motion.div>
-
+          {/* RIGHT — FORM */}
+          {/* <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="order-2 md:order-3 h-full"
+          > */}
           {/* RIGHT — FORM */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
