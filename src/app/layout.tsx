@@ -30,7 +30,7 @@ export const metadata = {
     siteName: 'Trivista Consulting',
     images: [
       {
-        url: '/og-image.jpg', // картинка для превью
+        url: '/og-image.png', // картинка для превью
         width: 1200,
         height: 630,
         alt: 'Trivista Consulting',
@@ -45,7 +45,7 @@ export const metadata = {
     title: 'Trivista Consulting',
     description:
       'Професійний бізнес-консалтинг: стратегія розвитку, управління та цифрові рішення.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 };
 
