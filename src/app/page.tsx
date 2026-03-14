@@ -8,6 +8,7 @@ import DirectionsSection from '../components/ui/DirectionsSection';
 import WhyUs from '../components/ui/WhyUs';
 import Footer from '../components/ui/Footer';
 import BoardSlider from '../components/ui/BoardSlider';
+import BoardSlide_2 from '../components/ui/BoardSlider_2';
 
 const LandingPage: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage: React.FC = () => {
       <Header />
       <HeroSection />
       <BoardSlider />
+      <BoardSlide_2 />
       <AboutSection />
       <DirectionsSection />
       {/* <HowWeWork /> */}

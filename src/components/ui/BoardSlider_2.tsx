@@ -11,52 +11,45 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/team-1.webp',
-    name: 'ВІКТОРІЯ СЕНИК',
-    position: 'Бухгалтер',
-    description: `Маю 22-річний досвід в індустрії.
+    photo: '/images/Natalya.webp',
+    name: 'Олєйніченко Наталія Валеріївна',
+    position: 'Експерт',
+    showButton: true,
+    description: `Досвідчений експерт у сфері закупівель, оптимізації ланцюгів постачання та категорійного менеджменту з понад 22-річним практичним досвідом у міжнародних та локальних проєктах. Випускниця MIM-Kyiv Business School.
 
-Я й моя команда має експертизу з бух.обліку, оподаткуванню різних форм власності, глибоку експертизу в ефективній побудові різних моделей для різних типів бізнесу. Критичне мислення, Емоційний інтелект помножене на досвід та професійну експертизу дозволяє «під ключ» закривати потреби партнерів в короткі терміни
+Спеціалізується на підвищенні ефективності procurement-функції, оптимізації витрат та побудові стійких ланцюгів постачання. Має глибоку експертизу у стратегічних та операційних закупівлях, категорійному менеджменті, управлінні постачальниками (SRM), управлінні ризиками та трансформації закупівельних функцій.
 
-Серед партнерів компанії з ринку FMCG (виробничі та торгові), девелоперського бізнесу, роздрібної торгівлі, ринку ХоРеКа, IT бізнесу та інші.`,
+Допомагає компаніям знижувати витрати, підвищувати операційну ефективність, забезпечувати прозоре управління постачальниками та формувати стабільні й ефективні моделі supply chain.`,
   },
   {
     id: 2,
-    photo: '/images/team-2.webp',
-    name: 'ЖУРАВЛЬОВ ВАЛЕРІЙ',
-    position: 'Експерт зі стратегічного розвитку та антикризисного менеджменту',
-    description: `Професіонал в побудові та розвитку бізнесу з 22 річним досвідом в українських та іноземній компаніях.
-
-Ключові компетенції.
-
-1. Стратегічний менеджмент.
-2. Антикризовий менеджмент
-3. Архітектура бізнесу
-4. Фінанси
-5. Управління ризиками
-6. Бізнес коучинг`,
+    photo: '/images/ava-1.jpg',
+    name: 'ЗАПРОШУЄМО В КОМАНДУ',
+    position: 'Експерт',
+    showButton: false,
   },
   {
     id: 3,
-    photo: '/images/team-3.webp',
-    name: 'ВІКТОРІЯ ПІЛЮГА',
-    position: 'Юрист',
-    description: `За більше ніж 25 років кількість виграних справ більше ніж 90%. Спеціалізації: корпоративне право, податкове право, кримінальне право, інтелектуальна власність, юридичний супровід бізнесу "під ключ".`,
+    photo: '/images/ava-2.jpg',
+    name: 'ЗАПРОШУЄМО В КОМАНДУ',
+    position: 'Експерт',
+    showButton: false,
   },
 ];
 
-export default function BoardSlider() {
+export default function BoardSlide_2() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [selectedMember, setSelectedMember] = useState<null | (typeof boardMembers)[0]>(null);
-  const [slidesPerView, setSlidesPerView] = useState(1);
 
+  const [slidesPerView, setSlidesPerView] = useState(1);
   const showNavigation = boardMembers.length > slidesPerView;
 
   return (
     <div id="slider1" className="w-full text-center relative py-12">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center">Про нас</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center">Залучені експерти</h2>
 
       <div className="relative max-w-7xl mx-auto">
+        {/* Десктоп стрелка влево */}
         {showNavigation && (
           <button
             onClick={() => swiperRef.current?.slidePrev()}
@@ -79,6 +72,7 @@ export default function BoardSlider() {
           </button>
         )}
 
+        {/* Десктоп стрелка вправо */}
         {showNavigation && (
           <button
             onClick={() => swiperRef.current?.slideNext()}
@@ -96,6 +90,7 @@ export default function BoardSlider() {
           </button>
         )}
 
+        {/* Мобильные стрелки */}
         {showNavigation && (
           <div className="flex justify-center gap-4 sm:hidden mb-4">
             <button
@@ -185,23 +180,25 @@ export default function BoardSlider() {
                   {member.description}
                 </p>
 
-                <div className="mt-[20px] flex justify-center">
-                  <button
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white px-5 py-2.5 rounded-full
-                    bg-gradient-to-r from-gray-900 to-gray-700
-                    hover:from-gray-800 hover:to-gray-600 transition"
-                    onClick={() => setSelectedMember(member)}
-                  >
-                    Детальніше
-                    <span className="transition group-hover:translate-x-1">→</span>
-                  </button>
-                </div>
+                {member.showButton && (
+                  <div className="mt-[20px] flex justify-center">
+                    <button
+                      className="inline-flex items-center gap-2 text-sm font-medium text-white px-5 py-2.5 rounded-full
+                      bg-gradient-to-r from-gray-900 to-gray-700
+                      hover:from-gray-800 hover:to-gray-600 transition"
+                      onClick={() => setSelectedMember(member)}
+                    >
+                      Детальніше →
+                    </button>
+                  </div>
+                )}
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
+      {/* Модалка */}
       {selectedMember && (
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
           <div className="bg-white max-w-lg w-full rounded-xl shadow-lg p-6 relative">
@@ -213,7 +210,9 @@ export default function BoardSlider() {
             </button>
 
             <h3 className="text-xl font-bold mb-2">{selectedMember.name}</h3>
+
             <p className="text-md font-semibold text-[#09234B] mb-2">{selectedMember.position}</p>
+
             <p className="text-sm text-gray-700 whitespace-pre-line text-left">
               {selectedMember.description}
             </p>
