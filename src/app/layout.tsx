@@ -17,8 +17,35 @@ export const metadata = {
   title: 'Trivista-consulting',
   description:
     'Trivista Consulting — професійний консалтинг для бізнесу. Стратегія розвитку, управління, цифрові рішення та підтримка росту компаній.',
+
   icons: {
     icon: [{ url: '/favicon.webp' }],
+  },
+
+  openGraph: {
+    title: 'Trivista Consulting',
+    description:
+      'Професійний бізнес-консалтинг: стратегія розвитку, управління, цифрові рішення та підтримка росту компаній.',
+    url: 'https://trivista-consulting.com.ua',
+    siteName: 'Trivista Consulting',
+    images: [
+      {
+        url: '/og-image.webp', // картинка для превью
+        width: 1200,
+        height: 630,
+        alt: 'Trivista Consulting',
+      },
+    ],
+    locale: 'uk_UA',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Trivista Consulting',
+    description:
+      'Професійний бізнес-консалтинг: стратегія розвитку, управління та цифрові рішення.',
+    images: ['/og-image.webp'],
   },
 };
 
