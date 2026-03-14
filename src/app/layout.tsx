@@ -15,8 +15,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  // metadataBase: new URL('https://trivista-consulting.com.ua'),
-  metadataBase: new URL('https://v-v-consulting.vercel.app/'),
+  metadataBase: new URL('https://trivista-consulting.com.ua'),
 
   title: 'Trivista Consulting',
   description:
