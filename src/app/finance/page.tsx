@@ -3,6 +3,7 @@ import FinancePage from '../../components/ui/FinanceServices';
 import Footer from '../../components/ui/Footer';
 
 import type { Metadata } from 'next';
+import CDA from '../../components/ui/CDA';
 
 export const metadata: Metadata = {
   title: 'Бухгалтерські послуги та фінансовий консалтинг | TriVista Consulting g',
@@ -41,6 +42,7 @@ const Products: React.FC = () => {
     <>
       <Header />
       <FinancePage />
+      <CDA />
       <Footer />
     </>
   );

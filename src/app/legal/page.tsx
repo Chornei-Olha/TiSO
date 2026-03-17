@@ -3,6 +3,7 @@ import LegalServices from '../../components/ui/LegalServices';
 import Footer from '../../components/ui/Footer';
 
 import type { Metadata } from 'next';
+import CDA from '../../components/ui/CDA';
 
 export const metadata: Metadata = {
   title: 'Юридичні послуги для бізнесу та підприємців | TriVista Consulting',
@@ -41,6 +42,7 @@ const Products: React.FC = () => {
     <>
       <Header />
       <LegalServices />
+      <CDA />
       <Footer />
     </>
   );

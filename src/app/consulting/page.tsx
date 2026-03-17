@@ -3,6 +3,7 @@ import ConsultingPage from '../../components/ui/ConsultingServices';
 import Footer from '../../components/ui/Footer';
 
 import type { Metadata } from 'next';
+import CDA from '../../components/ui/CDA';
 
 export const metadata: Metadata = {
   title: 'Бізнес-консалтинг для розвитку та масштабування компаній | TriVista Consulting',
@@ -41,6 +42,7 @@ const Products: React.FC = () => {
     <>
       <Header />
       <ConsultingPage />
+      <CDA />
       <Footer />
     </>
   );
