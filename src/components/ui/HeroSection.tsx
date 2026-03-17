@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Фоновое изображение */}
       <Image
         src="/images/bg2.webp"
-        alt="Business consulting background"
+        alt="Юридичний та фінансовий консалтинг для бізнесу — команда TriVista Consulting"
         fill
         priority
         className="object-cover"
@@ -23,12 +23,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       <div className="relative max-w-6xl mx-auto px-6 sm:px-0">
         <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
-          Комплексний юридичний фінансовий, бізнес-консалтинговий супровід бізнесу{' '}
+          Комплексний юридичний та фінансовий консалтинг для бізнесу{' '}
         </h1>
-        <p className="text-lg md:text-xl mt-16 text-gray-200 max-w-4xl">
+        <h2 className="text-lg md:text-xl mt-16 text-gray-200 max-w-4xl">
           Ми захищаємо ваші інтереси, оптимізуємо податкове навантаження та допомагаємо бізнесу
           зростати в Україні та за кордоном.{' '}
-        </p>
+        </h2>
         <div className="mt-16 flex flex-col sm:flex-row gap-4">
           <a
             onClick={() => setOpen(true)}

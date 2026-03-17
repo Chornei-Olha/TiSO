@@ -102,7 +102,7 @@ export default function FinancePage() {
       {/* ================= HERO ================= */}
       <section className="relative w-full min-h-[600px] flex items-center overflow-hidden py-8">
         <Image
-          src="/images/bg1.webp"
+          src="/images/3.webp"
           alt="Financial consulting"
           fill
           priority
@@ -114,10 +114,10 @@ export default function FinancePage() {
           <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
             Бухгалтерський та фінансовий консалтинг
           </h1>
-          <p className="text-lg md:text-xl mt-10 text-gray-200 max-w-3xl">
-            Комплексний фінансовий супровід бізнесу — від бухгалтерії до стратегічного управління
-            фінансами.{' '}
-          </p>
+          <h2 className="text-lg md:text-xl mt-10 text-gray-200 max-w-3xl">
+            Комплексний фінансовий супровід бізнесу — від ведення бухгалтерського обліку до
+            стратегічного управління фінансами компанії.
+          </h2>
           <div className="mt-16 flex flex-col sm:flex-row gap-4">
             <a
               onClick={() => setOpen(true)}

@@ -6,49 +6,58 @@ const audiences = [
   {
     title: 'Малий та середній бізнес',
     description:
-      'Юридичний супровід операційної діяльності, податкові питання, договори та захист інтересів.',
+      'Юридичний супровід бізнесу, податкове планування, розробка договорів, корпоративне право та захист інтересів компанії. ',
   },
   {
     title: 'Власники компаній',
-    description: 'Захист активів, корпоративна структура, стратегічні та управлінські рішення.',
+    description:
+      'Захист активів, корпоративне структурування бізнесу, стратегічний юридичний та фінансовий консалтинг для власників компаній. ',
   },
   {
     title: 'ФОП',
-    description: 'Оподаткування, перевірки, супровід діяльності та вирішення спорів.',
+    description:
+      'Податковий консалтинг для ФОП, юридичний супровід діяльності, підготовка договорів, допомога під час перевірок та вирішення спорів. ',
   },
   {
     title: 'Компанії з іноземним капіталом',
-    description: 'Міжнародне структурування, ТЦУ, податкове резидентство та комплаєнс.',
+    description:
+      'Міжнародне структурування бізнесу, трансфертне ціноутворення (ТЦУ), податкове резидентство, юридичний комплаєнс та супровід діяльності в Україні.',
   },
   {
-    title: 'Бізнес у кризових / спірних ситуаціях',
-    description: 'Судові спори, банкрутство, реструктуризація та антикризовий супровід.',
+    title: 'Бізнес у кризових або спірних ситуаціях',
+    description:
+      'Судові спори, банкрутство, реструктуризація бізнесу, антикризовий юридичний супровід та захист інтересів компанії.',
   },
 ];
 
 export default function WhoWeHelp() {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section id='who-we-help"' className="who-we-help py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center">
             Кому ми допомагаємо
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Ми працюємо з бізнесом та підприємцями, які цінують системний підхід, конфіденційність
-            та результат.
+          <p
+            id="section-description"
+            className="section-description mt-4 text-lg text-gray-600 max-w-3xl mx-auto"
+          >
+            TriVista Consulting надає юридичний та фінансовий консалтинг для бізнесу, підприємців та
+            компаній з іноземним капіталом. Ми допомагаємо оптимізувати податки, структурувати
+            бізнес, захищати активи та вирішувати складні юридичні питання.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div id="who-grid" className="who-grid grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {audiences.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -6 }}
               transition={{ type: 'spring', stiffness: 200, damping: 18 }}
-              className="group rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm hover:shadow-lg transition"
+              id="who-card"
+              className="who-card group rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm hover:shadow-lg transition"
             >
               {/* Accent line */}
               <div className="w-12 h-1 bg-blue-700 rounded-full mb-4"></div>

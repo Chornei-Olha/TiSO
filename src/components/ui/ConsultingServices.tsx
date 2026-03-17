@@ -38,14 +38,14 @@ const serviceBlocks = [
     title: 'Стратегія та розвиток',
     icon: TrendingUp,
     items: [
-      'Стратегічне планування',
+      'Стратегічне розвитку бізнесу',
       'Розробка бізнес-моделей (EBITDA +15% мін.)',
       'Комерційна та цінова стратегія',
       'Вихід на міжнародні ринки',
     ],
   },
   {
-    title: 'Бізнес-процеси та ефективність',
+    title: 'Оптимізація бізнес-процесів та ефективність',
     icon: Settings,
     items: [
       'Аудит бізнес-процесів',
@@ -55,7 +55,7 @@ const serviceBlocks = [
     ],
   },
   {
-    title: 'Фінанси та інвестиції',
+    title: 'Фінанси та інвестиції бізнесу',
     icon: Wallet,
     items: [
       'Фінансовий консалтинг',
@@ -64,12 +64,12 @@ const serviceBlocks = [
     ],
   },
   {
-    title: 'Управління та контроль',
+    title: 'Управління бізнесом та контроль',
     icon: Target,
     items: ['Розробка системи KPI', 'Управління проєктами', 'Організаційна структура'],
   },
   {
-    title: 'Право та відповідальність',
+    title: 'Правове регулювання бізнесу',
     icon: Shield,
     items: ['Правове регулювання бізнесу', 'Корпоративна соціальна відповідальність (CSR)'],
   },
@@ -90,7 +90,7 @@ export default function ConsultingPage() {
       {/* ================= HERO ================= */}
       <section className="relative w-full min-h-[600px] flex items-center overflow-hidden py-8">
         <Image
-          src="/images/bg1.webp"
+          src="/images/4.webp"
           alt="Business consulting"
           fill
           priority
@@ -100,11 +100,12 @@ export default function ConsultingPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-6 sm:px-0">
           <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
-            Преміальний бізнес-консалтинг для зростання та масштабування
+            Бізнес-консалтинг для розвитку та масштабування бізнесу{' '}
           </h1>
-          <p className="text-lg md:text-xl mt-10 text-gray-200 max-w-3xl">
-            Стратегія, фінанси та управління — комплексні рішення для стабільного розвитку бізнесу.
-          </p>
+          <h2 className="text-lg md:text-xl mt-10 text-gray-200 max-w-3xl">
+            Стратегія, фінанси та управління — комплексні консалтингові рішення для стабільного
+            розвитку та зростання бізнесу.{' '}
+          </h2>
           <div className="mt-16 flex flex-col sm:flex-row gap-4">
             <a
               onClick={() => setOpen(true)}
@@ -133,7 +134,7 @@ export default function ConsultingPage() {
           variants={fadeUp}
           className="text-3xl md:text-4xl font-semibold mb-20 text-center"
         >
-          Напрямки бізнес-консалтингу
+          Основні напрями бізнес-консалтингу для компаній{' '}
         </motion.h2>
 
         <motion.div
