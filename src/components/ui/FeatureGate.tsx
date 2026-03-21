@@ -36,7 +36,16 @@ export default function FeatureGate({
                 {description}
               </p>
 
-              <button className="mt-5 rounded-full bg-[#9000ff] px-20 py-5 text-[20px] font-bold text-white sm:mt-7 sm:text-[24px]">
+              <button
+                className="
+    mt-5 sm:mt-7
+    w-[100%] 
+    sm:w-auto sm:mx-0
+    rounded-full bg-[#9000ff]
+    py-3 sm:py-5 text-[20px] sm:text-[24px]
+    font-bold text-white
+  "
+              >
                 {buttonText}
               </button>
             </div>

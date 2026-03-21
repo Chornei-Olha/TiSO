@@ -20,13 +20,10 @@ export default function HeroGate({
       <div className="h-[600px] sm:h-[400px] w-full bg-[#222323]">
         <div
           className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-16 h-full
-
     bg-[url('/images/gate-mobile.png')]
     bg-bottom bg-contain
-
     sm:bg-[url('/images/gate.png')]
     sm:bg-center sm:bg-cover
-
     bg-no-repeat"
         >
           <div className="flex h-full items-start sm:items-center justify-start pt-32 sm:pt-0">
