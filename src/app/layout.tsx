@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ti-so.vercel.app'),
+  metadataBase: new URL('https://tiso-preview.vercel.app/'),
   icons: {
     icon: [{ url: '/favicon.webp' }],
   },
