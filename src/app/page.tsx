@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from '../components/ui/Header';
-
 import type { Metadata } from 'next';
+import Header from '../components/ui/Header';
 import HeroGate from '../components/ui/HeroGate';
 import FeatureGate from '../components/ui/FeatureGate';
 import HeroGateBg from '../components/ui/HeroGateBg';
