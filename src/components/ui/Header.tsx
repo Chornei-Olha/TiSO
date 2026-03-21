@@ -6,7 +6,7 @@ type HeaderProps = {
 };
 
 export default function Header({
-  logoSrc = '/images/logo.svg',
+  logoSrc = '/images/logo.png',
   logoAlt = 'TSO logo',
 }: HeaderProps) {
   return (
