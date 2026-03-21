@@ -1,151 +1,62 @@
-'use client';
+import { Instagram, Facebook, Youtube, Linkedin } from 'lucide-react';
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import Image from 'next/image';
+type SocialItem =
+  | { type: 'icon'; icon: any; link: string }
+  | { type: 'custom'; link: string; render: () => React.ReactNode };
 
-export default function ContactSectionDark() {
+const socials: SocialItem[] = [
+  { type: 'icon', icon: Instagram, link: '#' },
+  { type: 'icon', icon: Facebook, link: '#' },
+  { type: 'icon', icon: Youtube, link: '#' },
+
+  {
+    type: 'custom',
+    link: '#',
+    render: () => (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.5 2 2 6.5 2 12c0 4.2 2.6 7.8 6.3 9.3-.1-.8-.2-2 .1-2.9.2-.8 1.3-5.4 1.3-5.4s-.3-.6-.3-1.6c0-1.5.9-2.7 2-2.7.9 0 1.4.7 1.4 1.6 0 1-.6 2.5-.9 3.9-.3 1.2.6 2.2 1.8 2.2 2.2 0 3.7-2.8 3.7-6.1 0-2.5-1.7-4.4-4.8-4.4-3.5 0-5.7 2.6-5.7 5.5 0 1 .3 1.7.7 2.3.2.3.2.4.1.8-.1.3-.3 1-.4 1.3-.1.3-.3.4-.6.3-1.6-.7-2.3-2.5-2.3-4.6 0-3.4 2.9-7.5 8.6-7.5 4.6 0 7.6 3.3 7.6 6.9 0 4.7-2.6 8.3-6.5 8.3-1.3 0-2.5-.7-2.9-1.5l-.8 3c-.3 1-.9 2.2-1.4 3 1 .3 2 .5 3 .5 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
+      </svg>
+    ),
+  },
+
+  { type: 'icon', icon: Linkedin, link: '#' },
+];
+
+export default function Footer() {
   return (
-    <footer id="footer" className="relative overflow-hidden bg-slate-950 py-12 text-gray-100">
-      {/* background accents */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(34,211,238,0.10),transparent_30%)]" />
-      <div className="absolute inset-0 border-t border-white/10" />
+    <footer className="w-full bg-[#303030] py-10 sm:py-12 lg:py-14">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+          {/* LEFT */}
+          <div>
+            <p className="text-[18px] font-semibold text-white">TiSO Company</p>
 
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="grid gap-10 md:grid-cols-3 md:gap-12">
-          {/* LEFT — LOGO + ADDRESS */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col justify-between"
-          >
-            <div>
-              <Link href="/" className="inline-block">
-                <img
-                  src="/logo-dark.webp"
-                  alt="V&V consulting"
-                  className="h-[80px] sm:h-[96px] opacity-90 transition hover:opacity-100"
-                />
-              </Link>
+            <div className="mt-3 space-y-2 text-[14px] text-[#b4b4b4]">
+              <p>✉️ E-mail: sales@tiso.global</p>
+              <p>🌐 www.tiso.global</p>
             </div>
+          </div>
 
-            <div className="mt-6 space-y-2 text-sm leading-6 text-white/65">
-              <p className="text-white/90">ТОВ ТріВіста Консалтинг</p>
-              <p>
-                м. Київ
-                <br />
-                вул. Братства Тарасівців, 12/37
-              </p>
-            </div>
-          </motion.div>
+          {/* RIGHT */}
+          <div>
+            <p className="text-[16px] font-semibold text-white">PRODUCT CATALOGUE</p>
 
-          {/* CENTER — TEXT */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.08 }}
-            className="flex flex-col justify-between"
-          >
-            <div>
-              <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60 backdrop-blur-sm">
-                TriVista Consulting
-              </span>
-
-              <h2 className="mt-4 text-2xl font-semibold text-white md:text-3xl">
-                Юридичний супровід
-                <span className="block text-blue-300">для сучасного бізнесу</span>
-              </h2>
-
-              <p className="mt-4 max-w-md text-sm leading-6 text-white/65 md:text-base">
-                Допомагаємо підприємцям і компаніям ухвалювати сильні юридичні рішення: структурно,
-                конфіденційно та з фокусом на результат.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* RIGHT — CONTACTS */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.16 }}
-            className="rounded-[28px] border border-white/10 bg-white/5 p-6 backdrop-blur-md"
-          >
-            <h3 className="text-lg font-semibold text-white">Контакти</h3>
-
-            <div className="mt-6 space-y-5">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">Телефон</p>
-                <div className="mt-2 space-y-1">
-                  <a
-                    href="tel:+380970144014"
-                    className="block text-base font-medium text-blue-300 transition hover:text-blue-200"
-                  >
-                    +38 097 014 40 14
-                  </a>
-                  <a
-                    href="tel:+380969160062"
-                    className="block text-base font-medium text-blue-300 transition hover:text-blue-200"
-                  >
-                    +38 096 916 00 62
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">Email</p>
+            <div className="mt-4 flex items-center gap-4 sm:justify-end">
+              {socials.map((item, index) => (
                 <a
-                  href="mailto:thevvvgroup@gmail.com"
-                  className="mt-2 block text-base font-medium text-blue-300 transition hover:text-blue-200"
-                >
-                  thevvvgroup@gmail.com
-                </a>
-              </div>
-
-              <div className="pt-2">
-                <a
-                  href="/file.pdf"
+                  key={index}
+                  href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-white/55 underline underline-offset-4 transition hover:text-white/80"
+                  className="flex h-[40px] w-[40px] items-center justify-center rounded-full border border-[#b4b4b4] text-[#b4b4b4] transition hover:bg-[#a855f7] hover:border-[#a855f7] hover:text-white"
                 >
-                  Політика конфіденційності
+                  {item.type === 'icon' && <item.icon size={18} />}
+                  {item.type === 'custom' && item.render()}
                 </a>
-              </div>
+              ))}
             </div>
-          </motion.div>
-        </div>
-
-        {/* bottom line */}
-        <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/35">
-          © {new Date().getFullYear()} TriVista Consulting. Усі права захищені.
-        </div>
-      </div>
-
-      {/* FLOAT PHONE BUTTON */}
-      <div
-        className="fixed bottom-5 right-5 z-50 flex h-16 w-16 items-center justify-center rounded-full
-        border border-white/15 bg-white/10 shadow-[0_0_30px_6px_rgba(59,130,246,0.35)] backdrop-blur-xl
-        transition hover:scale-105 sm:h-20 sm:w-20 lg:h-[92px] lg:w-[92px]"
-      >
-        <a
-          href="tel:+380970144014"
-          className="flex h-full w-full items-center justify-center rounded-full"
-          aria-label="Зателефонувати"
-        >
-          <div className="flex h-full w-full items-center justify-center rounded-full transition-transform active:scale-95">
-            <Image
-              src="/images/img_phone_call_2_svg.svg"
-              alt="Phone Call"
-              width={60}
-              height={60}
-              className="h-12 w-12 animate-wiggle sm:h-14 sm:w-14 lg:h-[60px] lg:w-[60px]"
-            />
           </div>
-        </a>
+        </div>
       </div>
     </footer>
   );

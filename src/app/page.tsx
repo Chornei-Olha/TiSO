@@ -1,84 +1,65 @@
 import React from 'react';
 import Header from '../components/ui/Header';
-import HeroSection from '../components/ui/HeroSection';
-import AboutSection from '../components/ui/AboutSection';
-import DirectionsSection from '../components/ui/DirectionsSection';
-import WhyUs from '../components/ui/WhyUs';
-import Footer from '../components/ui/Footer';
-import BoardSlider from '../components/ui/BoardSlider';
-import BoardSlide_2 from '../components/ui/BoardSlider_2';
 
 import type { Metadata } from 'next';
-import CDA from '../components/ui/CDA';
+import HeroGate from '../components/ui/HeroGate';
+import FeatureGate from '../components/ui/FeatureGate';
+import HeroGateBg from '../components/ui/HeroGateBg';
+import ExperienceSection from '../components/ui/ExperienceSection';
+import FaceRecognitionSection from '../components/ui/FaceRecognitionSection';
+import BrandSection from '../components/ui/BrandSection';
+import SpecificationsSection from '../components/ui/SpecificationsSection';
+import CurvedGateSection from '../components/ui/CurvedGateSection';
+import Footer from '../components/ui/Footer';
+import VideoFeatureSection from '../components/ui/VideoFeatureSection';
+import GateFeaturesShowcase from '../components/ui/GateFeaturesShowcase';
+import GallerySlider from '../components/ui/GallerySlider';
 
 export const metadata: Metadata = {
-  title: 'Юридичний, фінансовий та бізнес-консалтинг в Україні | TriVista Consulting',
-  description:
-    'TriVista Consulting — комплексний юридичний, фінансовий та бізнес-консалтинг для компаній. Захист інтересів бізнесу, податкова оптимізація, супровід діяльності в Україні та за кордоном',
+  title: 'Lets Make Life Safer | TiSO',
+  description: 'Lets Make Life Safer',
 
   openGraph: {
-    title: 'Юридичний, фінансовий та бізнес-консалтинг в Україні | TriVista Consulting',
-    description:
-      'TriVista Consulting — комплексний юридичний, фінансовий та бізнес-консалтинг для компаній. Захист інтересів бізнесу, податкова оптимізація, супровід діяльності в Україні та за кордоном',
-    url: 'https://trivista-consulting.com.ua',
-    siteName: 'TriVista Consulting',
+    title: 'Lets Make Life Safer | TiSO',
+    description: 'Lets Make Life Safer',
+    url: '',
+    siteName: 'TiSO',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'TriVista Consulting',
+        alt: 'TiSO',
       },
     ],
-    locale: 'uk_UA',
+    locale: 'en_EN',
     type: 'website',
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Юридичний, фінансовий та бізнес-консалтинг в Україні | TriVista Consulting',
-    description:
-      'TriVista Consulting — комплексний юридичний, фінансовий та бізнес-консалтинг для компаній. Захист інтересів бізнесу, податкова оптимізація, супровід діяльності в Україні та за кордоном',
+    title: '',
+    description: '',
     images: ['/og-image.png'],
   },
-};
-
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
-  name: 'TriVista Consulting',
-  url: 'https://trivista-consulting.com.ua',
-  logo: 'https://trivista-consulting.com.ua/logo.png',
-  image: 'https://trivista-consulting.com.ua/og-image.png',
-  description: 'Юридичний, фінансовий та бізнес-консалтинг для компаній та підприємців.',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'вул. Братства Тарасівців, 12/37',
-    addressLocality: 'Київ',
-    addressCountry: 'UA',
-  },
-  telephone: ['+380970144014', '+380969160062'],
-  email: 'thevvvgroup@gmail.com',
-  areaServed: 'UA',
 };
 
 const LandingPage: React.FC = () => {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       <div className="min-h-screen font-inter overflow-x-hidden">
         <Header />
-        <HeroSection />
-        <BoardSlider />
-        <BoardSlide_2 />
-        <AboutSection />
-        <CDA />
-        <DirectionsSection />
-        <WhyUs />
+        <HeroGate />
+        <FeatureGate />
+        <HeroGateBg />
+        <ExperienceSection />
+        <FaceRecognitionSection />
+        <BrandSection />
+        <SpecificationsSection />
+        <CurvedGateSection />
+        <VideoFeatureSection />
+        <GateFeaturesShowcase />
+        <GallerySlider />
         <Footer />
       </div>
     </>
