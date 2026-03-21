@@ -86,7 +86,17 @@ export default function GateFeaturesShowcase() {
 
               <button
                 type="button"
-                className="mt-8 inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#9000ff] px-10 text-[22px] font-bold text-white shadow-[0_10px_28px_rgba(0,0,0,0.35)] transition-transform duration-200 hover:scale-[1.02] sm:min-h-[58px] sm:px-14 lg:mt-[390px]"
+                className="
+    mt-8
+    w-[100%]
+    sm:w-auto sm:mx-0 sm:px-14
+    min-h-[54px] sm:min-h-[58px]
+    rounded-full bg-[#9000ff]
+    text-[22px] font-bold text-white
+    shadow-[0_10px_28px_rgba(0,0,0,0.35)]
+    transition-transform duration-200 hover:scale-[1.02]
+    lg:mt-[390px]
+  "
               >
                 BUTTON
               </button>
