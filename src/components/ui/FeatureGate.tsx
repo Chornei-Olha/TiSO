@@ -1,67 +1,72 @@
-import Image from 'next/image';
-
 type FeatureGateProps = {
   eyebrow?: string;
   title?: string;
   description?: string;
-  buttonText?: string;
 };
 
 export default function FeatureGate({
   eyebrow = 'Consectetur adipiscing elit',
-  title = 'Lorem ipsum dolor sit amet',
-  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  buttonText = 'BUTTON',
+  title = 'Key features:',
+  description = `✦ BMDrive® — a reliable mechanism with a powerful BLDC gear motor that ensures long-term, maintenance-free operation.
+
+✦ Sweeper-M features 65,500 LEDs integrated across its panels and housing, providing full illumination.
+
+✦ The speed gate is equipped with a smart self-diagnosing system.
+
+✦ An innovative controller with an OLED display and buttons enables easy setup and configuration without the need for special programmers.
+
+✦ Digital control of force and leaf speed, combined with safety sensors, prevents a person from being struck by a leaf, even in the case of unauthorised passage.`,
 }: FeatureGateProps) {
   return (
     <section className="relative w-full overflow-hidden bg-[#303030]">
-      {/* desktop / tablet background */}
+      {/* desktop / tablet video background */}
       <div className="absolute inset-0 hidden sm:block">
-        <div className="absolute h-full w-full">
-          <Image src="/images/gate-2.webp" alt="" fill className="object-contain" />
-        </div>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="h-full w-full object-cover"
+        >
+          <source src="/video/featuregate.mp4" type="video/mp4" />
+        </video>
       </div>
 
-      <div className="relative mx-auto flex min-h-[200px] max-w-[1440px] items-start px-4 pt-10 sm:min-h-[200px] sm:items-center sm:px-6 sm:pt-0 lg:min-h-[570px] lg:px-16">
+      {/* desktop / tablet overlay */}
+      <div className="absolute inset-0 hidden sm:block bg-black/30 z-10" />
+
+      {/* content */}
+      <div className="relative z-20 mx-auto flex min-h-[300px] sm:min-h-screen max-w-[1440px] items-start px-4 pt-10 sm:items-center sm:px-6 sm:pt-0 lg:px-16">
         <div className="relative w-full">
           <div className="flex justify-start sm:justify-end">
             <div className="max-w-[560px] text-[#b3b3b3] lg:text-left">
               <p className="text-[20px] font-bold sm:text-[25px] lg:text-[30px]">{eyebrow}</p>
 
-              <h2 className="mt-5 text-[55px] font-bold leading-[60px] sm:leading-[80px] sm:mt-7 sm:text-[70px] lg:text-[75px]">
+              <h2 className="mt-5 text-[55px] font-bold leading-[60px] sm:mt-7 sm:text-[70px] sm:leading-[80px] lg:text-[75px]">
                 {title}
               </h2>
 
-              <p className="mt-5 text-[14px] sm:mt-7 sm:text-[16px] lg:text-[18px]">
+              <p className="mt-5 whitespace-pre-line text-[14px] sm:mt-7 sm:text-[16px] lg:text-[18px]">
                 {description}
               </p>
-
-              <button
-                className="
-    mt-5 sm:mt-7
-    w-[100%] 
-    sm:w-auto sm:mx-0
-    rounded-full bg-[#9000ff]
-    py-3 sm:py-5 text-[20px] sm:text-[24px]
-    font-bold text-white
-  "
-              >
-                {buttonText}
-              </button>
             </div>
           </div>
         </div>
       </div>
-      {/* mobile image block under text */}
-      <div className="relative inset-0 h-[300px] w-full sm:hidden">
-        <div className="absolute inset-x-0 bottom-0 h-full ">
-          <Image
-            src="/images/gate-2-mobile.webp"
-            alt=""
-            fill
-            className="object-contain object-bottom [mask-image:radial-gradient(circle,white_50%,transparent_100%)]"
-          />
-        </div>
+
+      {/* mobile video under text */}
+      <div className="relative z-20 mt-8 w-full sm:hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="h-full w-full object-contain object-bottom"
+        >
+          <source src="/video/featuregate.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
   );

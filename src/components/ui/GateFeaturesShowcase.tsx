@@ -40,10 +40,9 @@ export default function GateFeaturesShowcase() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-[860px] text-center">
+        <div className="mx-auto sm:max-w-[850px] text-left sm:text-center">
           <h2 className="text-[32px] font-bold leading-[1.08] text-[#b3b3b3] sm:text-[46px] lg:text-[53px]">
-            Lorem ipsum dolor sit amet
-            <br className="hidden sm:block" /> Consectetur adipiscing
+            Sweeper-M is not just a speed gate — it shapes the modern space around it.
           </h2>
         </div>
 

@@ -14,18 +14,10 @@ export default function FaceRecognitionSection() {
       <div className="pointer-events-none absolute top-0 left-0 hidden h-[120px] w-full bg-gradient-to-b from-[#303030] to-transparent sm:block" />
       <div className="pointer-events-none absolute bottom-0 left-0 hidden h-[120px] w-full bg-gradient-to-t from-[#303030] to-transparent sm:block" />
 
-      {/* 🔵 GLOW */}
-      <div className="pointer-events-none absolute inset-0 hidden sm:block">
-        <div className="absolute right-[10%] top-[20%] h-[500px] w-[500px] rounded-full bg-purple-600/30 blur-[200px]" />
-        <div className="absolute right-[20%] bottom-[10%] h-[400px] w-[400px] rounded-full bg-blue-600/30 blur-[200px]" />
-      </div>
-
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         {/* 🖥 DESKTOP TEXT */}
         <div className="hidden min-h-[720px] items-center sm:flex">
-          <div className="max-w-[370px] text-[#b3b3b3]">
-            <p className="text-[16px] sm:text-[18px]">Contactless access control:</p>
-
+          <div className="max-w-[300px] text-[#b3b3b3]">
             <h2 className="mt-2 text-[34px] font-bold leading-tight sm:text-[42px] lg:text-[48px]">
               Face recognition
             </h2>

@@ -8,11 +8,13 @@ import ExperienceSection from '../components/ui/ExperienceSection';
 import FaceRecognitionSection from '../components/ui/FaceRecognitionSection';
 import BrandSection from '../components/ui/BrandSection';
 import SpecificationsSection from '../components/ui/SpecificationsSection';
-import CurvedGateSection from '../components/ui/CurvedGateSection';
-import Footer from '../components/ui/Footer';
+// import CurvedGateSection from '../components/ui/CurvedGateSection';
 import VideoFeatureSection from '../components/ui/VideoFeatureSection';
 import GateFeaturesShowcase from '../components/ui/GateFeaturesShowcase';
-import GallerySlider from '../components/ui/GallerySlider';
+
+// import GallerySlider from '../components/ui/GallerySlider';
+import Footer from '../components/ui/Footer';
+import ContactSection from '../components/ui/ContactSection';
 
 export const metadata: Metadata = {
   title: 'Lets Make Life Safer | TiSO',
@@ -55,10 +57,11 @@ const LandingPage: React.FC = () => {
         <FaceRecognitionSection />
         <BrandSection />
         <SpecificationsSection />
-        <CurvedGateSection />
+        {/* <CurvedGateSection /> */}
         <VideoFeatureSection />
         <GateFeaturesShowcase />
-        <GallerySlider />
+        {/* <GallerySlider /> */}
+        <ContactSection />
         <Footer />
       </div>
     </>

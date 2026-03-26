@@ -37,21 +37,17 @@ export default function ExperienceSection({
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 py-10 sm:min-h-[800px] sm:px-6 sm:py-14 lg:px-10 lg:py-16">
         {/* MOBILE LAYOUT */}
         <div className="sm:hidden">
-          <div className="text-[#b3b3b3]">
+          <div className="text-[#fff]">
             <h2 className="max-w-[320px] text-[30px] font-bold leading-[0.98]">{title}</h2>
 
-            <p className="mt-5 max-w-[330px] text-[20px] leading-[1.35] text-[#c8c8c8]">
-              {subtitle}
-            </p>
+            <p className="mt-5 max-w-[330px] text-[20px] leading-[1.35]">{subtitle}</p>
 
-            <p className="mt-8 max-w-[340px] text-[14px] leading-[1.55] text-[#bdbdbd]">
-              {description}
-            </p>
+            <p className="mt-8 max-w-[340px] text-[14px] leading-[1.55]">{description}</p>
 
             <div className="mt-8">
-              <h3 className="text-[24px] font-semibold text-[#d0d0d0]">{benefitsTitle}</h3>
+              <h3 className="text-[24px] font-semibold">{benefitsTitle}</h3>
 
-              <ul className="mt-4 space-y-3 text-[14px] leading-[1.5] text-[#bdbdbd]">
+              <ul className="mt-4 space-y-3 text-[14px] leading-[1.5]">
                 {benefits.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border border-[#a855f7]" />
@@ -73,28 +69,26 @@ export default function ExperienceSection({
         </div>
 
         {/* DESKTOP / TABLET TEXT */}
-        <div className="hidden text-[#b3b3b3] sm:block lg:absolute lg:right-[6%] lg:top-[52%] lg:w-[34%] lg:max-w-[520px] lg:-translate-y-1/2">
+        <div className="hidden text-[#fff] sm:block lg:absolute lg:right-[6%] lg:top-[52%] lg:w-[34%] lg:max-w-[520px] lg:-translate-y-1/2">
           <h2 className="max-w-[520px] text-[30px] font-bold leading-[0.98] sm:text-[35px] lg:text-[42px]">
             {title}
           </h2>
 
-          <p className="mt-5 max-w-[560px] text-[20px] leading-[1.35] text-[#c8c8c8] sm:text-[28px] lg:text-[32px]">
+          <p className="mt-5 max-w-[560px] text-[20px] leading-[1.35] sm:text-[28px] lg:text-[32px]">
             {subtitle}
           </p>
 
-          <p className="mt-8 max-w-[600px] text-[14px] leading-[1.55] text-[#bdbdbd] sm:text-[16px] lg:text-[18px]">
+          <p className="mt-8 max-w-[600px] text-[14px] leading-[1.55] sm:text-[16px] lg:text-[18px]">
             {description}
           </p>
 
           <div className="mt-8">
-            <h3 className="text-[24px] font-semibold text-[#d0d0d0] sm:text-[28px]">
-              {benefitsTitle}
-            </h3>
+            <h3 className="text-[24px] font-semibold sm:text-[28px]">{benefitsTitle}</h3>
 
-            <ul className="mt-4 space-y-3 text-[14px] leading-[1.5] text-[#bdbdbd] sm:text-[18px]">
+            <ul className="mt-4 space-y-3 text-[14px] leading-[1.5] sm:text-[18px]">
               {benefits.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border border-[#a855f7]" />
+                  <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border border-[#fff]" />
                   <span>{item}</span>
                 </li>
               ))}
