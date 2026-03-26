@@ -31,8 +31,6 @@ export default function VideoFeatureSection() {
             <div className="pointer-events-none absolute -right-4 -top-4 h-[120px] w-[120px] border-t border-r border-purple-500" />
             <div className="pointer-events-none absolute -bottom-4 -left-4 h-[120px] w-[120px] border-b border-l border-purple-500" />
 
-            <p className="text-[26px] text-white">Excepteur sint occaecat cupidatat non proident</p>
-
             <h2 className="mt-4 text-[32px] font-bold leading-[1.1] sm:text-[40px] lg:text-[50px] text-[#b4b4b4]">
               The world’s first-of-Its-kind speed gate
             </h2>

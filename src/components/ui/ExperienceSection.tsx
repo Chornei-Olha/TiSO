@@ -8,7 +8,7 @@ type ExperienceSectionProps = {
 
 export default function ExperienceSection({
   title = 'Elevate the user experience',
-  subtitle = 'security of your building with the integration of Sweeper-M and Elevator Destination Control Systems',
+  subtitle = 'Security of your building with the integration of Sweeper-M and Elevator Destination Control Systems',
   description = "This combination transforms the lobby from a simple checkpoint into an intelligent transit hub. Instead of the traditional two-step process, our integrated solution automates the passenger's journey. The moment a user is authorized at the Sweeper-M speed gate, the system",
   benefitsTitle = 'Benefits & Features:',
   benefits = [
@@ -21,16 +21,16 @@ export default function ExperienceSection({
     <section className="relative w-full overflow-hidden bg-[#303030]">
       {/* DESKTOP / TABLET BACKGROUND */}
       <div
-        className="absolute inset-y-0 left-0 hidden w-full bg-cover bg-right bg-no-repeat sm:block lg:w-[75%]"
+        className="absolute inset-y-0 left-0 hidden w-full bg-cover bg-right bg-no-repeat sm:block lg:w-[65%]"
         style={{ backgroundImage: "url('/images/gate-4.webp')" }}
       />
 
       {/* DESKTOP / TABLET RIGHT BACKGROUND */}
-      <div className="absolute inset-y-0 right-0 hidden w-full bg-[#303030] sm:block lg:w-[25%]" />
+      <div className="absolute inset-y-0 right-0 hidden w-full bg-[#303030] sm:block lg:w-[35%]" />
 
       {/* DESKTOP / TABLET FADES */}
       <div className="pointer-events-none absolute left-0 top-0 hidden h-full w-[300px] bg-gradient-to-r from-[#303030] to-transparent sm:block" />
-      <div className="pointer-events-none absolute top-0 hidden h-full w-[400px] bg-gradient-to-l from-[#303030] to-transparent sm:block lg:right-[25%]" />
+      <div className="pointer-events-none absolute top-0 hidden h-full w-[400px] bg-gradient-to-l from-[#303030] to-transparent sm:block lg:right-[35%]" />
       <div className="pointer-events-none absolute left-0 top-0 hidden h-[100px] w-full bg-gradient-to-b from-[#303030] to-transparent sm:block" />
       <div className="pointer-events-none absolute bottom-0 left-0 hidden h-[100px] w-full bg-gradient-to-t from-[#303030] to-transparent sm:block" />
 

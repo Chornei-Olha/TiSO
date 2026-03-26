@@ -5,7 +5,6 @@ type FeatureGateProps = {
 };
 
 export default function FeatureGate({
-  eyebrow = 'Consectetur adipiscing elit',
   title = 'Key features:',
   description = `✦ BMDrive® — a reliable mechanism with a powerful BLDC gear motor that ensures long-term, maintenance-free operation.
 
@@ -41,8 +40,6 @@ export default function FeatureGate({
         <div className="relative w-full">
           <div className="flex justify-start sm:justify-end">
             <div className="max-w-[560px] text-[#b3b3b3] lg:text-left">
-              <p className="text-[20px] font-bold sm:text-[25px] lg:text-[30px]">{eyebrow}</p>
-
               <h2 className="mt-5 text-[55px] font-bold leading-[60px] sm:mt-7 sm:text-[70px] sm:leading-[80px] lg:text-[75px]">
                 {title}
               </h2>

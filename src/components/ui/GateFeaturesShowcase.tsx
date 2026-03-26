@@ -14,13 +14,13 @@ const leftFeatures: FeatureCard[] = [
     title: 'COMPACTNESS AND CLEAN GEOMETRY',
     text: 'Minimalist form factor integrates effortlessly into contemporary interiors, maintaining spatial clarity without visual clutter.',
   },
+];
+
+const rightFeatures: FeatureCard[] = [
   {
     title: 'BIM-READY',
     text: 'Prepared for inclusion in project documentation and streamlined coordination with engineering teams.',
   },
-];
-
-const rightFeatures: FeatureCard[] = [
   {
     title: 'MODULARITY',
     text: 'Configurable for different passage widths and access scenarios, allowing adaptation to a variety of spatial layouts.',
@@ -82,23 +82,6 @@ export default function GateFeaturesShowcase() {
                   className="h-auto w-full object-contain"
                 />
               </div>
-
-              <button
-                type="button"
-                className="
-    mt-8
-    w-[100%]
-    sm:w-auto sm:mx-0 sm:px-14
-    min-h-[54px] sm:min-h-[58px]
-    rounded-full bg-[#9000ff]
-    text-[22px] font-bold text-white
-    shadow-[0_10px_28px_rgba(0,0,0,0.35)]
-    transition-transform duration-200 hover:scale-[1.02]
-    lg:mt-[390px]
-  "
-              >
-                BUTTON
-              </button>
             </div>
 
             <div className="order-3 flex flex-col gap-5 lg:items-start lg:pl-2">

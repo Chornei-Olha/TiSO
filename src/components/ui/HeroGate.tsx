@@ -62,13 +62,13 @@ export default function HeroGate({
   return (
     <section className="w-full bg-[#303030]">
       {/* DESKTOP */}
-      <div className="relative hidden min-h-screen h-[650px] w-full overflow-hidden sm:flex sm:items-center">
+      <div className="relative hidden min-h-screen h-[700px] w-full overflow-hidden sm:flex sm:items-center">
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain"
         >
           <source src="/video/herogate.mp4" type="video/mp4" />
         </video>

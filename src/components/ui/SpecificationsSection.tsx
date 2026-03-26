@@ -11,7 +11,7 @@ export default function SpecificationsSection() {
         <h2 className="px-4 sm:px-6 lg:px-8 text-left sm:text-center text-[28px] font-medium text-[#cfcfcf] sm:text-[36px] lg:text-[44px]">
           Support for Architects
         </h2>
-        <p className="px-4 sm:px-6 lg:px-8 text-left sm:text-center text-[18px] font-medium text-[#cfcfcf] sm:text-[22px] lg:text-[25px] pt-8">
+        <p className="sm:max-w-[800px] px-4 sm:px-6 lg:px-8 text-left text-[18px] font-medium text-[#cfcfcf] sm:text-[22px] lg:text-[25px] pt-8">
           We work closely with architects at concept and detailed design stages to ensure accurate
           specification and seamless integration into the overall scheme.{' '}
         </p>
