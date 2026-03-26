@@ -56,14 +56,14 @@ export default function FeatureGate({
       </div>
 
       {/* mobile video under text */}
-      <div className="relative z-20 mt-8 w-full sm:hidden">
+      <div className="relative z-20 mt-16 w-full sm:hidden">
         <video
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
-          className="h-full w-full object-contain object-bottom"
+          className="h-full w-full object-contain object-bottom scale-150"
         >
           <source src="/video/featuregate.mp4" type="video/mp4" />
         </video>
