@@ -27,6 +27,11 @@ export default function ExperienceSection({
 
       {/* DESKTOP / TABLET RIGHT BACKGROUND */}
       <div className="absolute inset-y-0 right-0 hidden w-full bg-[#303030] sm:block lg:w-[35%]" />
+      <img
+        src="/images/Rectangle.webp"
+        alt="shadow"
+        className="pointer-events-none absolute top-[20%] hidden h-auto w-[30%] object-cover sm:block lg:right-[20%] z-[5]"
+      />
 
       {/* DESKTOP / TABLET FADES */}
       <div className="pointer-events-none absolute left-0 top-0 hidden h-full w-[300px] bg-gradient-to-r from-[#303030] to-transparent sm:block" />
@@ -70,11 +75,11 @@ export default function ExperienceSection({
 
         {/* DESKTOP / TABLET TEXT */}
         <div className="hidden text-[#fff] sm:block lg:absolute lg:right-[6%] lg:top-[52%] lg:w-[34%] lg:max-w-[520px] lg:-translate-y-1/2">
-          <h2 className="max-w-[520px] text-[30px] font-bold leading-[0.98] sm:text-[35px] lg:text-[42px]">
+          <h2 className="max-w-[500px] text-[30px] font-bold leading-[0.98] sm:text-[35px] lg:text-[42px]">
             {title}
           </h2>
 
-          <p className="mt-5 max-w-[560px] text-[20px] leading-[1.35] sm:text-[28px] lg:text-[32px]">
+          <p className="mt-5 max-w-[450px] text-[20px] leading-[1.35] sm:text-[28px] lg:text-[32px]">
             {subtitle}
           </p>
 

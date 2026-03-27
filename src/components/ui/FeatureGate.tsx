@@ -17,7 +17,7 @@ export default function FeatureGate({
 ✦ Digital control of force and leaf speed, combined with safety sensors, prevents a person from being struck by a leaf, even in the case of unauthorised passage.`,
 }: FeatureGateProps) {
   return (
-    <section className="relative w-full overflow-hidden bg-[#303030]">
+    <section id="more-info" className="relative w-full overflow-hidden bg-[#303030]">
       {/* desktop / tablet video background */}
       <div className="absolute inset-0 hidden sm:block">
         <video

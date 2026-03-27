@@ -19,11 +19,13 @@ export default function HeroGateBg() {
       {/* 📝 CONTENT */}
       <div className="relative z-10 mx-auto max-w-[1440px] h-full px-4 sm:px-6 lg:px-16 flex items-center">
         <div className="max-w-[550px] text-white">
-          <h2 className="text-[20px] sm:text-[25px] lg:text-[30px] font-medium leading-normal">
-            Sweeper-M acts as a dynamic communication tool. They transform design in real time:
-            adapting to different scenarios, guiding movement, reflecting brand colours, and
-            creating atmosphere.
+          <h2 className="text-[30px] font-bold leading-[1.1] sm:text-[35px] lg:text-[45px]">
+            Sweeper-M acts as a dynamic communication tool.
           </h2>
+          <p className=" mt-4 text-[20px] sm:text-[25px] lg:text-[30px] font-medium leading-normal">
+            They transform design in real time: adapting to different scenarios, guiding movement,
+            reflecting brand colours, and creating atmosphere.
+          </p>
           {/* 
           <p className="mt-6 text-[14px] sm:text-[16px] lg:text-[18px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
