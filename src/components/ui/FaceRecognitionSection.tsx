@@ -4,7 +4,7 @@ export default function FaceRecognitionSection() {
       {/* 🔵 DESKTOP BACKGROUND IMAGE (FULL WIDTH) */}
       <div
         className="pointer-events-none absolute inset-0 hidden sm:block bg-contain bg-right bg-no-repeat"
-        style={{ backgroundImage: "url('/images/gate-5.webp')" }}
+        style={{ backgroundImage: "url('/images/gate-5-1.webp')" }}
       />
 
       {/* 🔵 FADE LEFT (чтобы текст читался) */}
@@ -17,7 +17,7 @@ export default function FaceRecognitionSection() {
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         {/* 🖥 DESKTOP TEXT */}
         <div className="hidden min-h-[720px] items-center sm:flex">
-          <div className="max-w-[300px] text-[#b3b3b3]">
+          <div className="sm:max-w-[350px] md:max-w-[400px] lg:max-w-[550px] text-[#b3b3b3]">
             <h2 className="mt-2 text-[34px] font-bold leading-tight sm:text-[42px] lg:text-[48px]">
               Face recognition
             </h2>
