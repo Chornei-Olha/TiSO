@@ -3,7 +3,7 @@ export default function HeroGateBg() {
     <section className="relative w-full h-[600px] sm:h-[700px] lg:h-[800px] overflow-hidden">
       {/* 🖼 BACKGROUND */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-right sm:bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/gate-3.webp')" }}
       />
 
