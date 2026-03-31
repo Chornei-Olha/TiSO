@@ -22,7 +22,7 @@ export default function HeroGate({
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-contain"
+          className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/video/herogate2.mp4" type="video/mp4" />
         </video>
