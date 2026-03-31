@@ -3,7 +3,7 @@ export default function HeroGateBg() {
     <section className="relative w-full h-[600px] sm:h-[700px] lg:h-[800px] overflow-hidden">
       {/* 🖼 BACKGROUND */}
       <div
-        className="absolute inset-0 bg-cover bg-right sm:bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-[60%_center] sm:bg-cover sm:bg-right bg-no-repeat"
         style={{ backgroundImage: "url('/images/gate-3.webp')" }}
       />
 
@@ -19,10 +19,10 @@ export default function HeroGateBg() {
       {/* 📝 CONTENT */}
       <div className="relative z-10 mx-auto max-w-[1440px] h-full px-4 sm:px-6 lg:px-16 flex items-center">
         <div className="max-w-[550px] text-white">
-          <h2 className="text-[30px] font-bold leading-[1.1] sm:text-[35px] lg:text-[45px]">
+          <h2 className="pb-16 text-[30px] font-bold leading-[1.1] sm:text-[35px] lg:text-[45px]">
             Sweeper-M acts as a dynamic communication tool.
           </h2>
-          <p className=" mt-4 text-[20px] sm:text-[25px] lg:text-[30px] font-medium leading-normal">
+          <p className="pt-16 mt-4 text-[20px] sm:text-[25px] lg:text-[30px] font-medium leading-normal">
             They transform design in real time: adapting to different scenarios, guiding movement,
             reflecting brand colours, and creating atmosphere.
           </p>
