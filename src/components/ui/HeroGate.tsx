@@ -30,7 +30,7 @@ export default function HeroGate({
         <div className="absolute inset-0 z-10 bg-black/40" />
 
         <div className="relative z-20 mx-auto flex h-full w-full max-w-[1440px] items-center justify-start px-4 sm:px-6 lg:px-16">
-          <div className="text-left text-[#B3B3B3]">
+          <div className="text-left text-[#B3B3B3] mt-32">
             <p className="text-[19px] sm:text-[23px] lg:text-[27px]">{titleTop}</p>
 
             <h1 className="mt-2 text-[55px] sm:text-[60px] lg:text-[64px] font-bold">{title}</h1>
